@@ -9,8 +9,8 @@ class Solution:
                 temp.sort()
                 diff = temp[1]-temp[0]
                 flag = True
-                for i in range(1, len(temp)):
-                    if temp[i] - temp[i-1] != diff:
+                for j in range(1, len(temp)):
+                    if temp[j] - temp[j-1] != diff:
                         flag = False
                         ans.append(False)
                         break
